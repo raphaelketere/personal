@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academic Achievements</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: bounce 1s infinite alternate;
+    }
+
+    nav {
+      background: #023e8a;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #ffdd57;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      color: #0077b6;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-left: 5px solid #0077b6;
+      background: #f9f9f9;
+      animation: slideIn 0.8s ease-in-out;
+    }
+
+    .resume-download {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .resume-download a {
+      background: #0077b6;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    /* New Skills Button */
+    .skills-btn {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .skills-btn a {
+      background: #0077b6;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .skills-btn a:hover {
+      background: #005f99;
+    }
+
+    footer {
+      background: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Academic Achievements</h1>
+  </header>
+
+<!--    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('projects') }}">Projects</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+  -->
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>My Education Journey</h2>
+    <ul>
+      <li> 🎓 <strong>University:</strong> Bachelor of Science in Information Technology – Kisii University (2020 - 2024)</li>
+      <li> 🏫 <strong>High School:</strong> Sr. Mary Stephen Nkoitoi Secondary School – Kenya Certificate of Secondary Education (KCSE, 2019)</li>
+      <li> 🏠 <strong>Primary School:</strong> Naisoya Primary School – Kenya Certificate of Primary Education (KCPE, 2019)</li>
+    </ul>
+
+    <h2>View My Resume</h2>
+    <iframe src="Cv.pdf" type="application/pdf" width="100%" height="500px"></iframe>
+
+    <div class="resume-download">
+      <a href="Cv.pdf" download>Download Resume (PDF)</a>
+    </div>
+
+    <!-- 🔽 Skills Button -->
+    <div class="skills-btn">
+      <a href="skills.html">View My Skills</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

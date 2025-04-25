@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experience - My Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #023e8a;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffdd57;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 2em;
+      color: #023e8a;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .section-title h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #0077b6;
+      display: block;
+      margin: 8px auto 0;
+      border-radius: 2px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      margin-bottom: 30px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .experience-entry h3 {
+      color: #0077b6;
+      margin-bottom: 8px;
+    }
+
+    .experience-entry span {
+      color: #666;
+      font-size: 0.95em;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .experience-entry p {
+      line-height: 1.6;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto 0;
+      padding: 10px 20px;
+      background: #0077b6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-button:hover {
+      background: #023e8a;
+    }
+
+    footer {
+      text-align: center;
+      background: #333;
+      color: #ccc;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Professional Experience</h1>
+    <p>Here's a look at where I've worked and what I've accomplished.</p>
+  </header>
+
+  <section>
+    <div class="section-title">
+      <h2>Work History</h2>
+    </div>
+
+    <div class="card experience-entry">
+      <h3>Attachee – Maasai Mara University</h3>
+      <span>May 2023 – August 2023</span>
+      <p>Maintained college computer labs, offered technical support to students and staff, managed basic networking, and provided tutoring in IT-related courses.</p>
+    </div>
+
+    <div class="card experience-entry">
+      <h3>Computer Tutor – Maven Professional Institute</h3>
+      <span>July 2024 – April 2025</span>
+      <p>Delivered lessons in computer packages, Microsoft Office tools, and internet basics to college students.</p>
+    </div>
+
+    <div class="card experience-entry">
+      <h3>Junior Game Developer – Asili GameDev Company</h3>
+      <span>August 2023 – December 2024</span>
+      <p>Assisted in development of 2D android games and management of the company social media pages.</p>
+    </div>
+
+    <div class="card experience-entry">
+        <h3>Student Leader – Kisii University, Narok County Students' Association</h3>
+        <span>January 2022 – January 2023</span>
+        <span>January 2023 – January 2024</span>
+
+        <p>I served under the office of the Dean of Students, as the Secretary General and as Chairperson of the Narok County Students' Association, Kisii University connecting the students from Narok County to the dean of students office.</p>
+      </div>
+  </section>
+
+  <a href="home.html" class="back-button">← Back to Home</a>
+
+  <footer>
+    <p>&copy; All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

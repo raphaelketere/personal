@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sliding Page - My Skills</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #023e8a;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #ffdd57;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    .subheading {
+      font-size: 1.5em;
+      color: #023e8a;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #0077b6;
+      padding-bottom: 5px;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .skill {
+      width: 45%;
+      margin-bottom: 20px;
+      background: #e9f1fa;
+      padding: 15px;
+      border-left: 5px solid #0077b6;
+      border-radius: 8px;
+      animation: slideInSkill 0.8s ease-in-out;
+    }
+
+    .skill h3 i {
+      margin-right: 8px;
+      color: #0077b6;
+    }
+
+    footer {
+      background: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .skill {
+        width: 100%;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInSkill {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Skills</h1>
+  </header>
+
+<!--    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('projects') }}">Projects</a>
+    <a href="{{ url_for('academics') }}">Academics</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+    
+-->
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="academics.html">Academics</a>
+    <a href="contact.html">Contact</a>
+    
+  </nav>
+
+  <section>
+    <h2>Technical & Soft Skills</h2>
+
+    <div class="subheading">🛠 Technical Skills</div>
+    <div class="skills-container">
+      <div class="skill">
+        <h3><i class="fas fa-network-wired"></i>Networking</h3>
+        <p>LAN/WAN setup, IP addressing, troubleshooting, and network security configuration.</p>
+      </div>
+
+      <div class="skill">
+        <h3><i class="fas fa-database"></i>Database Management</h3>
+        <p>Designing, querying, and maintaining databases using MySQL, MS Access, and SQLite.</p>
+      </div>
+
+      <div class="skill">
+        <h3><i class="fas fa-tools"></i>Hardware & Software Maintenance</h3>
+        <p>Diagnosing and repairing hardware, OS installation, drivers, and updates.</p>
+      </div>
+
+      <div class="skill">
+        <h3><i class="fas fa-code"></i>Web Development</h3>
+        <p>HTML, CSS, JavaScript, and WordPress. Building responsive and user-friendly websites.</p>
+      </div>
+
+      <div class="skill">
+        <h3><i class="fas fa-paint-brush"></i>Graphics & 2D/3D Art</h3>
+        <p>Adobe Illustrator, Photoshop, Blender – creating illustrations, logos, and models.</p>
+      </div>
+    </div>
+
+    <div class="subheading">🤝 Soft Skills</div>
+    <div class="skills-container">
+      <div class="skill">
+        <h3><i class="fas fa-users"></i>Communication & Teamwork</h3>
+        <p>Strong interpersonal skills with experience leading and collaborating on IT projects.</p>
+      </div>
+
+      <div class="skill">
+        <h3><i class="fas fa-lightbulb"></i>Problem Solving</h3>
+        <p>Logical thinker with the ability to troubleshoot issues and provide effective IT solutions.</p>
+      </div>
+
+      <div class="skill">
+        <h3><i class="fas fa-chalkboard-teacher"></i>IT Support & Training</h3>
+        <p>Providing user support, conducting training sessions, and resolving system-related issues.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

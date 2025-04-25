@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 30px;
+    }
+
+    .group-title {
+      color: #023e8a;
+      margin-top: 30px;
+      font-size: 1.5em;
+      border-bottom: 2px solid #0077b6;
+      padding-bottom: 5px;
+    }
+
+    .hobby-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .hobby-card {
+      background: #e9f1fa;
+      border-left: 6px solid #0077b6;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .hobby-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .hobby-card i {
+      color: #0077b6;
+      margin-right: 10px;
+      font-size: 1.3em;
+    }
+
+    .back-button {
+      display: block;
+      width: 180px;
+      margin: 40px auto 10px;
+      padding: 12px 20px;
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .back-button:hover {
+      background: #ffdd57;
+      color: #333;
+    }
+
+    footer {
+      background: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Hobbies</h1>
+  </header>
+
+  <section>
+    <h2>Things I Love Doing</h2>
+
+    <div class="group-title">🌳 Outdoor Hobbies</div>
+    <div class="hobby-grid">
+      <div class="hobby-card">
+        <p><i class="fas fa-futbol"></i> Playing football with friends — It keeps me active and improves my teamwork skills.</p>
+      </div>
+      <div class="hobby-card">
+        <p><i class="fas fa-mountain"></i> Exploring nature and new places — Helps me refresh my mind and stay inspired.</p>
+      </div>
+    </div>
+
+    <div class="group-title">💻 Indoor & Creative Hobbies</div>
+    <div class="hobby-grid">
+      <div class="hobby-card">
+        <p><i class="fas fa-paint-brush"></i> Creating digital art — I design 2D/3D graphics, posters, logos.</p>
+      </div>
+      <div class="hobby-card">
+        <p><i class="fas fa-laptop-code"></i> Coding and Tech related — I enjoy solving problems and creating digital tools and exploring different tech fields.</p>
+      </div>
+      <div class="hobby-card">
+        <p><i class="fas fa-gamepad"></i> Developing games — I build mini games like my fish archery project.</p>
+      </div>
+      <div class="hobby-card">
+        <p><i class="fas fa-users"></i> Mentoring and teaching — Sharing IT knowledge to uplift others in the community.</p>
+      </div>
+    </div>
+
+    <a href="home.html" class="back-button">← Back to Home</a>
+  </section>
+
+  <footer>
+    <p>&copy; All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
